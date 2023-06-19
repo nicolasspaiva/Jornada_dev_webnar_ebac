@@ -1,0 +1,61 @@
+.videoFooter {
+  position: relative;
+  bottom: 20%;
+  color: white;
+  margin-left: 35px;
+}
+
+.videoFooter_text h3 {
+  padding-bottom: 20px;
+}
+
+.videoFooter_text p {
+  padding-bottom: 20px;
+}
+
+.videoFooter_music {
+  display: flex;
+}
+
+.videomusicfooter_text {
+  width: 80%;
+  overflow-x: hidden;
+}
+.videomusicfooter_text p {
+  animation: moveThetext 3s infinite linear;
+}
+.videoFooter_record {
+  animation: spinTherecord 3s infinite linear;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  height: 50px;
+  filter: invert(1);
+}
+
+@keyframes spinTherecord {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveThetext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media  only screen and (max-width : 440px) {
+  .videoFooter{
+   bottom: 22%;
+  }
+  videomusicfooter_text {
+    width: 78%;
+  }
+
+
+}
